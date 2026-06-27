@@ -226,8 +226,12 @@ export default function App() {
                 </div>
               </div>
               <div>
-                <h1 className="text-xl font-black bg-clip-text text-transparent bg-gradient-to-r from-[#38bdf8] via-[#34d399] via-[#fbbf24] via-[#fb923c] to-[#f43f5e] leading-none uppercase tracking-tight">Arcenol ERP</h1>
-                <p className="text-[9px] font-mono font-bold uppercase tracking-wider text-sky-400/80">Powered by Digital Communique</p>
+                <h1 className="text-xl font-black leading-none uppercase tracking-tight inline-flex items-center">
+                  <span className="text-[#be123c]">A</span>
+                  <span className="text-[#15803d]">r</span>
+                  <span className="text-[#0B1F3A]">cenol ERP</span>
+                </h1>
+                <p className="text-[9px] font-mono font-bold uppercase tracking-wider text-[#0b1f3a]/80">Powered by Digital Communique</p>
               </div>
             </div>
 
@@ -447,14 +451,16 @@ export default function App() {
                     </div>
                   </div>
 
-                  <h2 className="text-3xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#38bdf8] via-[#34d399] via-[#fbbf24] via-[#fb923c] to-[#f43f5e] uppercase inline-flex items-center gap-1">
-                    Arcenol ERP
+                  <h2 className="text-3xl font-black tracking-tight uppercase inline-flex items-center">
+                    <span className="text-[#be123c]">A</span>
+                    <span className="text-[#15803d]">r</span>
+                    <span className="text-[#0B1F3A]">cenol ERP</span>
                   </h2>
-                  <div className="text-[10px] font-mono font-black text-slate-400 tracking-[0.2em] uppercase mt-1">
+                  <div className="text-[10px] font-mono font-black text-[#0B1F3A]/80 tracking-[0.2em] uppercase mt-1">
                     Powered by Digital Communique
                   </div>
 
-                  <p className="text-[11.5px] font-medium text-slate-300 leading-relaxed max-w-[320px] mt-4 select-none">
+                  <p className="text-[12.5px] font-bold text-[#0B1F3A] leading-relaxed max-w-[320px] mt-4 select-none">
                     Comprehensive ERP for Battery Manufacturing, Inventory, CRM, Warranty & Analytics.
                   </p>
                 </div>
@@ -523,11 +529,11 @@ export default function App() {
                   </div>
 
                   {/* Options checkbox and links */}
-                  <div className="flex items-center justify-between text-[11px] text-slate-300 font-semibold px-1 py-1">
+                  <div className="flex items-center justify-between text-[11px] text-[#0B1F3A] font-extrabold px-1 py-1">
                     <label className="flex items-center gap-2 cursor-pointer select-none">
                       <input 
                         type="checkbox"
-                        className="rounded bg-white/5 border-white/20 text-blue-500 focus:ring-0 w-3.5 h-3.5 transition"
+                        className="rounded bg-white border-slate-350 text-blue-600 focus:ring-0 w-3.5 h-3.5 transition"
                         defaultChecked
                       />
                       Remember Me
@@ -535,7 +541,7 @@ export default function App() {
                     <a 
                       href="#forgot-password" 
                       onClick={(e) => { e.preventDefault(); alert("Security configuration notice: Please contact Central Registrar Dr. Ananya Sharma to reset manual deployment keystores."); }}
-                      className="text-sky-400 hover:text-sky-350 transition hover:underline"
+                      className="text-blue-900 hover:text-blue-950 transition hover:underline font-extrabold"
                     >
                       Forgot Password?
                     </a>
@@ -558,32 +564,32 @@ export default function App() {
                           <span className="text-amber-300">Signing In...</span>
                         </>
                       ) : (
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] via-[#34d399] via-[#fbbf24] via-[#fb923c] to-[#f43f5e] font-sans font-black tracking-widest text-[12px]">Sign In</span>
+                        <span className="font-sans font-black tracking-widest text-[12px] text-white">Sign In</span>
                       )}
                     </button>
 
                     <button
                       type="button"
                       onClick={() => alert("OTP Security check: An encryption payload has been routed to registered helpline contact +91 79 4028 9200. Please enter code once received.")}
-                      className="w-full py-3 px-4 bg-white/5 hover:bg-white/10 active:scale-[0.98] rounded-xl text-xs font-bold tracking-wider transition-all duration-150 border border-white/10 uppercase font-sans flex items-center justify-center"
+                      className="w-full py-3 px-4 bg-[#0B1F3A] hover:bg-[#061528] active:scale-[0.98] rounded-xl text-xs font-bold tracking-wider transition-all duration-150 border border-slate-700/20 uppercase font-sans flex items-center justify-center text-white"
                     >
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ec4899] via-[#f43f5e] via-[#fb923c] to-[#fbbf24] font-sans font-black tracking-widest text-[11px]">Login with OTP</span>
+                      <span className="font-sans font-black tracking-widest text-[11px] text-white">Login with OTP</span>
                     </button>
                   </div>
                 </form>
               </div>
 
               {/* Languages select list & Sliders Toggle footer area strictly matched */}
-              <div className="mt-8 border-t border-white/10 pt-5 flex items-center justify-between text-xs text-slate-300 select-none">
+              <div className="mt-8 border-t border-slate-350/40 pt-5 flex items-center justify-between text-xs text-[#0B1F3A] select-none font-bold">
                 {/* Language list selection */}
                 <div className="relative">
                   <select 
-                    className="bg-transparent text-[11px] font-bold outline-none border-none py-1 pl-1 pr-6 cursor-pointer focus:ring-0 text-slate-300 hover:text-white"
+                    className="bg-transparent text-[11px] font-extrabold outline-none border-none py-1 pl-1 pr-6 cursor-pointer focus:ring-0 text-[#0B1F3A] hover:text-slate-950"
                     defaultValue="en"
                   >
-                    <option value="en" className="bg-slate-950 font-sans text-slate-300">💻 English</option>
-                    <option value="es" className="bg-slate-950 font-sans text-slate-300">🏛️ Spanish</option>
-                    <option value="fr" className="bg-slate-950 font-sans text-slate-300">🏛️ Hindi</option>
+                    <option value="en" className="bg-white font-sans text-[#0B1F3A] font-bold">💻 English</option>
+                    <option value="es" className="bg-white font-sans text-[#0B1F3A] font-bold">🏛️ Spanish</option>
+                    <option value="fr" className="bg-white font-sans text-[#0B1F3A] font-bold">🏛️ Hindi</option>
                   </select>
                 </div>
 

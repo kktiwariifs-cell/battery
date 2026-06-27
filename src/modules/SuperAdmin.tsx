@@ -141,7 +141,7 @@ export const SuperAdmin: React.FC = () => {
           setSupabaseErrorMsg(null);
         }
       } catch (err: any) {
-        console.error("Supabase initial load error:", err);
+        console.warn("Supabase initial load error:", err);
         if (active) {
           const isTableMissing = err.code === 'PGRST116' || 
                                  err.code === '42P01' || 
